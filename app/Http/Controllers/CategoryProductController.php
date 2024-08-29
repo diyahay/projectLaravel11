@@ -34,6 +34,7 @@ class CategoryProductController extends Controller
             'price' => 'required|numeric',
         ]);
     
+        
         $categoryProduct = new CategoryProduct();
         $categoryProduct->name = $request->input('name');
         $categoryProduct->description = $request->input('description');
